@@ -5,6 +5,38 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
+	<nav>Testing</nav>
+	<div class="row">
+		<div class="col-xs-2">
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-pills nav-stacked sidebar" role="pilllist">
+		    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="pill" data-toggle="pill">Home</a></li>
+		    <li role="presentation"><a href="#profile" aria-controls="profile" role="pill" data-toggle="pill">Profile</a></li>
+		    <li role="presentation"><a href="#messages" aria-controls="messages" role="pill" data-toggle="pill">Messages</a></li>
+		    <li role="presentation"><a href="#settings" aria-controls="settings" role="pill" data-toggle="pill">Settings</a></li>
+		  </ul>
+		</div>
+		<div class="col-xs-10">
+		  <!-- Tab panes -->
+		  <div class="pill-content">
+		    <div role="pillpanel" class="pill-pane active" id="home">Home</div>
+		    <div role="pillpanel" class="pill-pane" id="profile">Profile</div>
+		    <div role="tabpanel" class="tab-pane" id="messages">Messages</div>
+		    <div role="tabpanel" class="tab-pane" id="settings">Settings</div>
+		    <div role="pillpanel" class="tab-pane" id="settings"><a href="#hide-sidebar" id="#hide-sidebar">Hide</a></div>
+		  </div>
+		</div>
+	</div>
 
+	<!-- Menu Toggle Script -->
+    <script>
+    $("#hide-sidebar").click(function(e) {
+        e.preventDefault();
+        $("#sidebar").toggleClass("toggled");
+    });
+    </script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
